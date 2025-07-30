@@ -1,99 +1,85 @@
-/* Base Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #191970, #4B0082);
   color: #d3d3d3;
-  scroll-behavior: smooth;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.hero-section {
   text-align: center;
-  padding: 60px 20px;
 }
-.typewriter {
-  font-size: 1.8rem;
-  font-weight: bold;
-  border-right: 2px solid #fff;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: typing 4s steps(40, end), blink .75s step-end infinite;
+
+header {
+  padding: 3rem 1rem 1rem;
 }
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+
+h1 {
+  font-size: 2rem;
 }
-@keyframes blink {
-  50% { border-color: transparent }
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
-.cta-button {
-  background-color: #00bfa6;
-  padding: 12px 24px;
-  border-radius: 25px;
+
+.btn {
+  background-color: teal;
   color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
   display: inline-block;
-  margin-top: 20px;
   transition: transform 0.3s ease;
 }
-.glow {
-  box-shadow: 0 0 15px #00bfa6;
-}
-.cta-button:hover {
+
+.btn:hover {
   transform: scale(1.05);
 }
-.lead-magnet, .services, .stats-section {
-  text-align: center;
-  margin: 40px 20px;
+
+.glow {
+  box-shadow: 0 0 15px teal;
 }
-.stat-card {
-  display: inline-block;
-  width: 150px;
-  background: rgba(255,255,255,0.05);
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
+
+section {
+  margin: 3rem 1rem;
 }
-.counter {
-  font-size: 2rem;
+
+.testimonial, .faq {
+  max-width: 600px;
+  margin: auto;
+}
+
+details {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+summary {
   font-weight: bold;
+  cursor: pointer;
 }
-.service-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.service-item {
-  width: 120px;
-  text-align: center;
-}
-.service-item i {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: #25D366;
   color: white;
-  padding: 15px;
-  border-radius: 50%;
   font-size: 24px;
-  z-index: 1000;
+  padding: 14px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
-#scrollTopBtn {
+
+#topBtn {
   position: fixed;
-  bottom: 90px;
+  bottom: 80px;
   right: 20px;
-  background: #555;
+  padding: 10px 15px;
+  background: #666;
   color: white;
-  padding: 10px 14px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
 }
