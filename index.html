@@ -2,49 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deepak Mishra – Trusted Insurance Partner</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1 id="headline"></h1>
-    <p class="tagline">Health, Car, Bike – Get the Right Plan with the Right Guidance</p>
+    <h1 class="headline" id="typewriter"></h1>
+    <p class="tagline">Health, Car, Bike – Get the Right Plan with the Right Guidance.</p>
+    <a href="https://wa.me/917999276798?text=Hi%20Deepak%2C%20I%20need%20insurance%20help" class="cta">Chat on WhatsApp</a>
   </header>
 
-  <main>
-    <section class="buttons" data-aos="fade-up">
-      <a href="https://wa.me/7999276798" class="btn glow">📲 Chat on WhatsApp</a>
-      <a href="https://forms.gle/XtKoWXCoNeUG2xxbA" class="btn glow" target="_blank">📝 Fill Insurance Info</a>
-      <a href="mailto:d.deep.m@gmail.com" class="btn glow">📧 Email Us</a>
-      <a href="tel:7999276798" class="btn glow">📞 Call Now</a>
-      <a href="vcard.vcf" class="btn glow" download>📁 Download vCard</a>
-      <button class="btn glow" onclick="navigator.share({title: 'Insurance Services', url: window.location.href})">📤 Share</button>
-    </section>
+  <!-- Animated Stats -->
+  <section class="stats">
+    <div class="stat-card" data-aos="fade-up">
+      <h2>Happy Clients</h2>
+      <p>150+</p>
+    </div>
+    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+      <h2>Policies Sold</h2>
+      <p>500+</p>
+    </div>
+  </section>
 
-    <section class="testimonial" data-aos="fade-up">
-      <h2>What Clients Say</h2>
-      <p>“Deepak helped me find the best car insurance at a great price. Very trustworthy!”</p>
-    </section>
+  <!-- Service Highlights -->
+  <section class="services">
+    <div class="service" data-aos="fade-up">
+      <img src="icons/health.svg" alt="Health Insurance" />
+      <h3>Health Insurance</h3>
+    </div>
+    <div class="service" data-aos="fade-up" data-aos-delay="100">
+      <img src="icons/car.svg" alt="Car Insurance" />
+      <h3>Car Insurance</h3>
+    </div>
+    <div class="service" data-aos="fade-up" data-aos-delay="200">
+      <img src="icons/bike.svg" alt="Bike Insurance" />
+      <h3>Bike Insurance</h3>
+    </div>
+    <div class="service" data-aos="fade-up" data-aos-delay="300">
+      <img src="icons/commercial.svg" alt="Commercial Vehicle" />
+      <h3>Commercial Insurance</h3>
+    </div>
+  </section>
 
-    <section class="faq" data-aos="fade-up">
-      <h2>FAQs</h2>
-      <details>
-        <summary>Which insurance services do you offer?</summary>
-        <p>Health, Car, Bike, and Commercial Vehicle Insurance.</p>
-      </details>
-      <details>
-        <summary>How can I contact you?</summary>
-        <p>Via WhatsApp, Email, or Call — all buttons are on this page.</p>
-      </details>
-    </section>
-  </main>
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn">&#8679;</button>
 
-  <a href="https://wa.me/7999276798" class="whatsapp-float" target="_blank">💬</a>
-  <button onclick="scrollToTop()" id="topBtn">⬆</button>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/917999276798?text=Hi%20Deepak%2C%20I%20need%20insurance%20help" class="float-whatsapp" target="_blank">
+    <img src="icons/whatsapp.svg" alt="WhatsApp" />
+  </a>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <footer>
+    <p>© 2025 Deepak Mishra – Trusted Insurance Partner</p>
+  </footer>
+
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
