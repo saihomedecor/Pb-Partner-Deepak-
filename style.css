@@ -110,7 +110,7 @@ summary {
 /* Footer */
 .footer {
   background: #fff;
-  color: #fff;
+  color: #196666;
   text-align: center;
   padding: 50px 20px;
   font-size: 1em;
@@ -128,7 +128,7 @@ summary {
 
 .footer a {
   text-decoration: none;
-  color: #fff;
+  color: #196666;
 }
 
 .footer a:hover {
