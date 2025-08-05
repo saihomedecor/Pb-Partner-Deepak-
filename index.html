@@ -72,26 +72,5 @@
     </div>
   </footer>
 
-  <!-- JavaScript for Counter Animation -->
-  <script>
-    const counters = document.querySelectorAll('.count');
-    counters.forEach(counter => {
-      counter.innerText = '0';
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const speed = 100; // lower is faster
-        const increment = target / speed;
-        if(count < target) {
-          counter.innerText = `${Math.ceil(count + increment)}`;
-          setTimeout(updateCount, 30);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  </script>
-
 </body>
 </html>
