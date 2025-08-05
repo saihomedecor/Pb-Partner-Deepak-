@@ -4,47 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Deepak Mishra – Trusted Insurance Partner</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <h1 id="headline"></h1>
-    <p class="tagline">Health, Car, Bike – Get the Right Plan with the Right Guidance</p>
-  </header>
 
-  <main>
-    <section class="buttons" data-aos="fade-up">
-      <a href="https://wa.me/7999276798" class="btn glow">📲 Chat on WhatsApp</a>
-      <a href="https://forms.gle/XtKoWXCoNeUG2xxbA" class="btn glow" target="_blank">📝 Fill Insurance Info</a>
-      <a href="mailto:d.deep.m@gmail.com" class="btn glow">📧 Email Us</a>
-      <a href="tel:7999276798" class="btn glow">📞 Call Now</a>
-      <a href="vcard.vcf" class="btn glow" download>📁 Download vCard</a>
-      <button class="btn glow" onclick="navigator.share({title: 'Insurance Services', url: window.location.href})">📤 Share</button>
-    </section>
+  <!-- Lead Magnet Section -->
+  <section class="lead-magnet">
+    <h1>Get Free Insurance Advice 📋</h1>
+    <p>Fill out the form and let Deepak Mishra help you choose the right plan.</p>
+    <a href="https://forms.gle/1V3m4E1VAfYs59aE8" target="_blank" class="btn pulse">📥 Fill Google Form</a>
+  </section>
 
-    <section class="testimonial" data-aos="fade-up">
-      <h2>What Clients Say</h2>
-      <p>“Deepak helped me find the best car insurance at a great price. Very trustworthy!”</p>
-    </section>
+  <!-- Animated Stats -->
+  <section class="stats">
+    <div class="stat-box">
+      <h2 class="count" data-target="1500">0</h2>
+      <p>+ Happy Clients</p>
+    </div>
+    <div class="stat-box">
+      <h2 class="count" data-target="7">0</h2>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-box">
+      <h2 class="count" data-target="2500">0</h2>
+      <p>Policies Issued</p>
+    </div>
+  </section>
 
-    <section class="faq" data-aos="fade-up">
-      <h2>FAQs</h2>
-      <details>
-        <summary>Which insurance services do you offer?</summary>
-        <p>Health, Car, Bike, and Commercial Vehicle Insurance.</p>
-      </details>
-      <details>
-        <summary>How can I contact you?</summary>
-        <p>Via WhatsApp, Email, or Call — all buttons are on this page.</p>
-      </details>
-    </section>
-  </main>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917999276798" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+  </a>
 
-  <a href="https://wa.me/7999276798" class="whatsapp-float" target="_blank">💬</a>
-  <button onclick="scrollToTop()" id="topBtn">⬆</button>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>✅ Health Insurance</li>
+        <li>🚗 Car Insurance</li>
+        <li>🛵 Bike Insurance</li>
+        <li>🚛 Commercial Vehicle Insurance</li>
+        <li>📑 Claim Support & Policy Renewal</li>
+      </ul>
+      <p>Made with ❤️ by Deepak Mishra</p>
+      <p>PolicyBazaar Partner | Bhatapara, Chhattisgarh</p>
+      <p>📧 <a href="mailto:d.deep.m@gmail.com">d.deep.m@gmail.com</a></p>
+    </div>
+  </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="script.js"></script>
+  <!-- JavaScript for Counter Animation -->
+  <script>
+    const counters = document.querySelectorAll('.count');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 100; // lower is faster
+        const increment = target / speed;
+        if(count < target) {
+          counter.innerText = `${Math.ceil(count + increment)}`;
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  </script>
+
 </body>
 </html>
